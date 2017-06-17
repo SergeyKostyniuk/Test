@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import ua.sergey.test.model.StackoverflowWebsite;
 import ua.sergey.test.persistence.StackoverflowWebsiteRepositopy;
 
+import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,7 +35,11 @@ public class StackoverflowService {
                 "Super User2", "for power user"));
     }
 
+    @PostConstruct
+    public void init() {
+        repositopy.save(items);
+    }
     public List<StackoverflowWebsite> findAll() {
-        return repositopy.findALL;
+        return repositopy.findAll();
     }
 }
