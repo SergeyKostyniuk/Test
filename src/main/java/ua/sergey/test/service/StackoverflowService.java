@@ -16,16 +16,16 @@ public class StackoverflowService {
         items.add(new StackoverflowWebsite("superuser", "http://superuser.com",
                 "http://www.iconsdb.com/icons/download/color/CFFF30/linkedin-3-64.ico",
                 "Super User", "for power user"));
-        items.add(new StackoverflowWebsite("stackoverflow", "http://stackoverflow1.com",
+        items.add(new StackoverflowWebsite("stackoverflow", "http://stackoverflow.com",
                 "http://www.iconsdb.com/icons/download/orange/stackoverflow-6-64.ico",
                 "Stack Overflow", "for programmers"));
-        items.add(new StackoverflowWebsite("superuser", "http://superuser1.com",
+        items.add(new StackoverflowWebsite("superuser", "http://superuser.com",
                 "http://www.iconsdb.com/icons/download/color/CFFF30/linkedin-3-64.ico",
                 "Super User1", "for power user"));
-        items.add(new StackoverflowWebsite("stackoverflow", "http://stackoverflow2.com",
+        items.add(new StackoverflowWebsite("stackoverflow", "http://stackoverflow.com",
                 "http://www.iconsdb.com/icons/download/orange/stackoverflow-6-64.ico",
                 "Stack Overflow", "for programmers"));
-        items.add(new StackoverflowWebsite("superuser", "http://superuser2.com",
+        items.add(new StackoverflowWebsite("superuser", "http://superuser.com",
                 "http://www.iconsdb.com/icons/download/color/CFFF30/linkedin-3-64.ico",
                 "Super User2", "for power user"));
     }
