@@ -12,6 +12,7 @@ import ua.sergey.test.service.StackoverflowService;
 import java.util.List;
 
 import static org.junit.Assert.*;
+import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
 public class StackoverflowControllerTest {
@@ -24,6 +25,9 @@ public class StackoverflowControllerTest {
 
     @Test
     public void getListOfProviders() throws Exception {
+        //prepere
+        when(stackoverflowService.findAll()).thenReturn();
+
         List<StackoverflowWebsite> listOfProviders = sut.getListOfProviders();
     }
 
