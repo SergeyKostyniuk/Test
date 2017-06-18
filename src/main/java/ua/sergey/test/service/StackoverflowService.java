@@ -13,9 +13,16 @@ public class StackoverflowService {
     @Autowired
     private StackoverflowWebsiteRepositopy repositopy;
 
-    private static List<StackoverflowWebsite> items = new ArrayList<>();
+    @Autowired
+    private StackExchangeClient stackExchangeClient;
 
     public List<StackoverflowWebsite> findAll() {
-        return repositopy.findAll();
+        return stackExchangeClient.getSites();
     }
+
+ //   private static List<StackoverflowWebsite> items = new ArrayList<>();
+
+//    public List<StackoverflowWebsite> findAll() {
+//        return repositopy.findAll();
+//    }
 }
