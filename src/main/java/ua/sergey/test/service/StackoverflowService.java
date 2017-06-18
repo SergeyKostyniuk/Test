@@ -34,11 +34,11 @@ public class StackoverflowService {
                 "http://www.iconsdb.com/icons/download/color/CFFF30/linkedin-3-64.ico",
                 "Super User2", "for power user"));
     }
-
-    @PostConstruct
-    public void init() {
-        repositopy.save(items);
-    }
+//
+//   @PostConstruct
+//    public void init() {
+//        repositopy.save(items);
+//    }
     public List<StackoverflowWebsite> findAll() {
         return repositopy.findAll();
     }
