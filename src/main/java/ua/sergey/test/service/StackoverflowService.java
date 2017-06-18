@@ -26,7 +26,7 @@ public class StackoverflowService {
 //                "http://cdn.sstatic.net/Sites/ru/img/favicon.ico",
 //                "Stack Overflow не русском", "для програмистов"));
 //
-//    }
+
 //
 //   @PostConstruct
 //    public void init() {

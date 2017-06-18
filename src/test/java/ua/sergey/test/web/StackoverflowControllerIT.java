@@ -39,11 +39,15 @@ public class StackoverflowControllerIT {
         mongoTemplate.dropCollection(StackoverflowWebsite.class);
         mongoTemplate.save(new StackoverflowWebsite("website1","website", "icon", "title" , "description"));
         mongoTemplate.save(new StackoverflowWebsite("website2","website", "icon", "title" , "description"));
+
+
+
     }
 
     @Test
     public void testGetListOfProviders() throws Exception {
         //prepare
+
 
         ResponseEntity<List<StackoverflowWebsite>> responseEntity =
                 restTemplate.exchange("http://localhost:8090/api/stackoverflow", HttpMethod.GET, null,
