@@ -1,13 +1,11 @@
 package ua.sergey.test.service;
 
 import org.springframework.stereotype.Component;
-import ua.sergey.test.model.StackoverflowWebsite;
-
-import java.util.List;
+import ua.sergey.test.model.SitesDTO;
 
 @Component
 public class StackExchangeClient {
-    public List<StackoverflowWebsite> getSites() {
+    public SitesDTO getSites() {
         return null;
     }
 }
