@@ -11,10 +11,4 @@ import java.util.List;
 @Repository
 public interface StackoverflowWebsiteRepositopy extends MongoRepository <StackoverflowWebsite, String> {
     List<StackoverflowWebsite> findByWebsite(String website);
-//    @Autowired
-//    private MongoTemplate mongoTemplate;
-//
-//    public List<StackoverflowWebsite> findALL() {
-//        return mongoTemplate.findAll(StackoverflowWebsite.class);
-//    }
 }
