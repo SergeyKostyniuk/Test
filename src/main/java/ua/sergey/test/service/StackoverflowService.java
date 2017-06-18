@@ -13,27 +13,20 @@ import java.util.List;
 public class StackoverflowService {
     @Autowired
     private StackoverflowWebsiteRepositopy repositopy;
+
     private static List<StackoverflowWebsite> items = new ArrayList<>();
-    static {
-        items.add(new StackoverflowWebsite("stackoverflow", "http://stackoverflow.com",
-                "http://www.iconsdb.com/icons/download/orange/stackoverflow-6-64.ico",
-                "Stack Overflow", "for programmers"));
-        items.add(new StackoverflowWebsite("superuser", "http://superuser.com",
-                "http://www.iconsdb.com/icons/download/color/CFFF30/linkedin-3-64.ico",
-                "Super User", "for power user"));
-        items.add(new StackoverflowWebsite("stackoverflow", "http://stackoverflow.com",
-                "http://www.iconsdb.com/icons/download/orange/stackoverflow-6-64.ico",
-                "Stack Overflow", "for programmers"));
-        items.add(new StackoverflowWebsite("superuser", "http://superuser.com",
-                "http://www.iconsdb.com/icons/download/color/CFFF30/linkedin-3-64.ico",
-                "Super User1", "for power user"));
-        items.add(new StackoverflowWebsite("stackoverflow", "http://stackoverflow.com",
-                "http://www.iconsdb.com/icons/download/orange/stackoverflow-6-64.ico",
-                "Stack Overflow", "for programmers"));
-        items.add(new StackoverflowWebsite("superuser", "http://superuser.com",
-                "http://www.iconsdb.com/icons/download/color/CFFF30/linkedin-3-64.ico",
-                "Super User2", "for power user"));
-    }
+//    static {
+//        items.add(new StackoverflowWebsite("stackoverflow", "http://stackoverflow.com",
+//                "http://www.iconsdb.com/icons/download/orange/stackoverflow-6-64.ico",
+//                "Stack Overflow", "for programmers"));
+//        items.add(new StackoverflowWebsite("superuser", "http://superuser.com",
+//                "http://www.iconsdb.com/icons/download/color/CFFF30/linkedin-3-64.ico",
+//                "Super User", "for power user"));
+//        items.add(new StackoverflowWebsite("ru.starckoverflow", "http://ru.stackoverflow.com",
+//                "http://cdn.sstatic.net/Sites/ru/img/favicon.ico",
+//                "Stack Overflow не русском", "для програмистов"));
+//
+//    }
 //
 //   @PostConstruct
 //    public void init() {
