@@ -1,9 +1,9 @@
 
  #*.iml
- .idea/
+ *.idea/
  /out/
  /build/
- .gitignore
+ *.gitignore
 
 # Compiled class file
 *.class
