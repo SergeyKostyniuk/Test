@@ -27,15 +27,16 @@ public class StackoverflowService {
     public List<StackoverflowWebsite> findAll() {
         return stackExchangeClient.getSites().stream()
                 .map(this::tostackoverflowWebsite)
-               // .filter(this::ignoreMeta)
+                .filter(this::ignoreMeta)
                 .collect(collectingAndThen(toList(), ImmutableList::copyOf));
 
 
     }
-//
-//    private boolean ignoreMeta(@NonNull StackoverflowWebsite stackoverflowWebsite) {
-//        return !StackoverflowWebsite.getId().startsWith("meta.");
-//    }
+
+    private boolean ignoreMeta(@NonNull StackoverflowWebsite stackoverflowWebsite) {
+               return !stackoverflowWebsite.getId().startsWith("meta.");
+           }
+
 
     private  StackoverflowWebsite tostackoverflowWebsite(@NonNull SiteDTO input) {
         return new StackoverflowWebsite(
